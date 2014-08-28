@@ -23,7 +23,7 @@ public class UsuarioIbb {
 	}
 	
 	public String salvar(){
-		FecesContext context = FacesContext.getCurrentInstance();
+		FacesContext context = FacesContext.getCurrentInstance();
 		if (!this.senha.equalsIgnoreCase(this.confirmaSenha)){
 			context.addMessage(null, new FacesMessage(FaceMessage.SEVERITY_ERROR,
 					"Senha confirmada incorretamente",""));
