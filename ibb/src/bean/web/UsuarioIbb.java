@@ -1,5 +1,7 @@
 package bean.web;
 
+// teste de edição;
+
 import java.util.Map;
 import javax.*;
 
@@ -14,7 +16,7 @@ public class UsuarioIbb {
 	@ManagedProperty(value="#{param}")
 	private Map<String, String> parametros;
 	public String operacao(){
-		// executa a opea��o
+		// executa a opeação
 		return "resultado";
 	}
 	
