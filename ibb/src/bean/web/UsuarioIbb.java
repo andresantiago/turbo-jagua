@@ -1,7 +1,5 @@
 package bean.web;
 
-// teste de edição;
-
 import java.util.Map;
 import javax.*;
 
