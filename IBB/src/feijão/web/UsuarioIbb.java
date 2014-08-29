@@ -7,6 +7,7 @@ import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 
+//
 
 @ManagedBean(value="usuarioIbb")
 @RequestScoped
