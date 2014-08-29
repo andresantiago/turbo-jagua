@@ -13,15 +13,15 @@
 			<h:messages />
 			<h:panelGrid columns="2">
 				<h:outputLabel value="Nome:" for="nome" />
-				<h:inputText id="nome" label="Nome" value="#{usuarioWeb.nome}" required="true" />
+				<h:inputText id="nome" label="Nome" value="#{usuarioIbb.nome}" required="true" />
 				<h:outputLabel value="email" for="email" />
-				<h:inputText id="email" label="Email" value="#{usuarioWeb.email}" />
+				<h:inputText id="email" label="Email" value="#{usuarioIbb.email}" />
 				<h:outputLabel value="Senha" for="senha" />
-				<h:inputText id="senha" label="Senha" value="#{usuarioWeb.senha}" required="true" />
+				<h:inputText id="senha" label="Senha" value="#{usuarioIbb.senha}" required="true" />
 				<h:outputLabel value="Confirma Senha" for="confirmasenha" />
-				<h:inputText id="confirmasenha" label="Confirma Senha" value="#{usuarioWeb.confirmasenha}" required="true" />
+				<h:inputText id="confirmasenha" label="Confirma Senha" value="#{usuarioIbb.confirmasenha}" required="true" />
                 <h:outputText />
-                <h:commandButton action="#{usuarioWeb.salvar}" value="Salvar" />
+                <h:commandButton action="#{usuarioIbb.salvar}" value="Salvar" />
              </h:panelGrid>
 		</h:form>
 	<hr />
