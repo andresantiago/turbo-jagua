@@ -1,9 +1,15 @@
 package bean.web;
 
 import java.util.Map;
-import javax.*;
+import javax.annotation.ManagedBean;
+import javax.faces.application.FacesMessage;
+import javax.faces.bean.ManagedProperty;
+import javax.faces.bean.RequestScoped;
+import javax.faces.context.FacesContext;
 
-@ManegedBean(name=usuarioWeb)
+//teste
+
+@ManagedBean(value="usuarioIbb")
 @RequestScoped
 
 public class UsuarioIbb {
@@ -11,10 +17,12 @@ public class UsuarioIbb {
 	private String email;
 	private String senha;
 	private String confirmaSenha;
+	
 	@ManagedProperty(value="#{param}")
 	private Map<String, String> parametros;
+	
 	public String operacao(){
-		// executa a opeação
+		// executa a opeaÃ§Ã£o
 		return "resultado";
 	}
 	
@@ -25,7 +33,7 @@ public class UsuarioIbb {
 	public String salvar(){
 		FacesContext context = FacesContext.getCurrentInstance();
 		if (!this.senha.equalsIgnoreCase(this.confirmaSenha)){
-			context.addMessage(null, new FacesMessage(FaceMessage.SEVERITY_ERROR,
+			context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR,
 					"Senha confirmada incorretamente",""));
 			return "usuario";
 		}
