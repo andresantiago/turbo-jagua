@@ -26,6 +26,10 @@ public class UsuarioIbb {
 		return "resultado";
 	}
 	
+	public String inicio(){
+		return "inicio";
+	}
+	
 	public String novo(){
 		return "usuario";
 	}
